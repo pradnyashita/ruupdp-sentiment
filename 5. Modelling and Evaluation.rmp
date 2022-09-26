@@ -1,0 +1,1373 @@
+<?xml version="1.0" encoding="UTF-8"?><process version="9.10.011">
+  <context>
+    <input/>
+    <output/>
+    <macros/>
+  </context>
+  <operator activated="true" class="process" compatibility="9.10.011" expanded="true" name="Process">
+    <parameter key="logverbosity" value="init"/>
+    <parameter key="random_seed" value="2001"/>
+    <parameter key="send_mail" value="never"/>
+    <parameter key="notification_email" value=""/>
+    <parameter key="process_duration_for_mail" value="30"/>
+    <parameter key="encoding" value="SYSTEM"/>
+    <process expanded="true">
+      <operator activated="true" class="read_csv" compatibility="9.10.011" expanded="true" height="68" name="Read CSV" width="90" x="45" y="187">
+        <parameter key="csv_file" value="D:\PRADNYA\TUGAS KULIAH\MATA KULIAH\SEMESTER 7\EP\Paper RUU PDP\RUU PDP - Data Preprocessing.csv"/>
+        <parameter key="column_separators" value=";"/>
+        <parameter key="trim_lines" value="false"/>
+        <parameter key="use_quotes" value="true"/>
+        <parameter key="quotes_character" value="&quot;"/>
+        <parameter key="escape_character" value="\"/>
+        <parameter key="skip_comments" value="true"/>
+        <parameter key="comment_characters" value="#"/>
+        <parameter key="starting_row" value="1"/>
+        <parameter key="parse_numbers" value="true"/>
+        <parameter key="decimal_character" value="."/>
+        <parameter key="grouped_digits" value="false"/>
+        <parameter key="grouping_character" value=","/>
+        <parameter key="infinity_representation" value=""/>
+        <parameter key="date_format" value="MMM d, yyyy h:mm:ss a z"/>
+        <parameter key="first_row_as_names" value="true"/>
+        <list key="annotations"/>
+        <parameter key="time_zone" value="SYSTEM"/>
+        <parameter key="locale" value="English (United States)"/>
+        <parameter key="encoding" value="windows-1252"/>
+        <parameter key="read_all_values_as_polynominal" value="false"/>
+        <list key="data_set_meta_data_information">
+          <parameter key="0" value="Sentimen.true.polynominal.attribute"/>
+          <parameter key="1" value="abai.true.real.attribute"/>
+          <parameter key="2" value="abrik.true.real.attribute"/>
+          <parameter key="3" value="abu.true.real.attribute"/>
+          <parameter key="4" value="acak.true.real.attribute"/>
+          <parameter key="5" value="acap.true.real.attribute"/>
+          <parameter key="6" value="actor.true.real.attribute"/>
+          <parameter key="7" value="acuannya.true.real.attribute"/>
+          <parameter key="8" value="acuhkan.true.real.attribute"/>
+          <parameter key="9" value="administratif.true.real.attribute"/>
+          <parameter key="10" value="advokasi.true.real.attribute"/>
+          <parameter key="11" value="ahli.true.real.attribute"/>
+          <parameter key="12" value="air.true.real.attribute"/>
+          <parameter key="13" value="aja.true.real.attribute"/>
+          <parameter key="14" value="akbarshah.true.real.attribute"/>
+          <parameter key="15" value="akibat.true.real.attribute"/>
+          <parameter key="16" value="akses.true.real.attribute"/>
+          <parameter key="17" value="aksi.true.real.attribute"/>
+          <parameter key="18" value="aktif.true.real.attribute"/>
+          <parameter key="19" value="akui.true.real.attribute"/>
+          <parameter key="20" value="akun.true.real.attribute"/>
+          <parameter key="21" value="alamat.true.real.attribute"/>
+          <parameter key="22" value="alangkah.true.real.attribute"/>
+          <parameter key="23" value="alasan.true.real.attribute"/>
+          <parameter key="24" value="alhamdulillah.true.real.attribute"/>
+          <parameter key="25" value="allah.true.real.attribute"/>
+          <parameter key="26" value="ama.true.real.attribute"/>
+          <parameter key="27" value="aman.true.real.attribute"/>
+          <parameter key="28" value="ampir.true.real.attribute"/>
+          <parameter key="29" value="amrik.true.real.attribute"/>
+          <parameter key="30" value="anak.true.real.attribute"/>
+          <parameter key="31" value="aneh.true.real.attribute"/>
+          <parameter key="32" value="anggap.true.real.attribute"/>
+          <parameter key="33" value="anggaran.true.real.attribute"/>
+          <parameter key="34" value="anggep.true.real.attribute"/>
+          <parameter key="35" value="anggota.true.real.attribute"/>
+          <parameter key="36" value="angin.true.real.attribute"/>
+          <parameter key="37" value="anjir.true.real.attribute"/>
+          <parameter key="38" value="anti.true.real.attribute"/>
+          <parameter key="39" value="antisipasi.true.real.attribute"/>
+          <parameter key="40" value="apesnya.true.real.attribute"/>
+          <parameter key="41" value="apjasi.true.real.attribute"/>
+          <parameter key="42" value="app.true.real.attribute"/>
+          <parameter key="43" value="apresiasi.true.real.attribute"/>
+          <parameter key="44" value="arah.true.real.attribute"/>
+          <parameter key="45" value="arfianto.true.real.attribute"/>
+          <parameter key="46" value="aset.true.real.attribute"/>
+          <parameter key="47" value="asli.true.real.attribute"/>
+          <parameter key="48" value="aslinya.true.real.attribute"/>
+          <parameter key="49" value="asnato.true.real.attribute"/>
+          <parameter key="50" value="asshole.true.real.attribute"/>
+          <parameter key="51" value="atensi.true.real.attribute"/>
+          <parameter key="52" value="atur.true.real.attribute"/>
+          <parameter key="53" value="aturan.true.real.attribute"/>
+          <parameter key="54" value="aware.true.real.attribute"/>
+          <parameter key="55" value="awas.true.real.attribute"/>
+          <parameter key="56" value="ayat.true.real.attribute"/>
+          <parameter key="57" value="ayo.true.real.attribute"/>
+          <parameter key="58" value="bab.true.real.attribute"/>
+          <parameter key="59" value="babak.true.real.attribute"/>
+          <parameter key="60" value="baca.true.real.attribute"/>
+          <parameter key="61" value="bacot.true.real.attribute"/>
+          <parameter key="62" value="bad.true.real.attribute"/>
+          <parameter key="63" value="badan.true.real.attribute"/>
+          <parameter key="64" value="badut.true.real.attribute"/>
+          <parameter key="65" value="badutt.true.real.attribute"/>
+          <parameter key="66" value="bagus.true.real.attribute"/>
+          <parameter key="67" value="bahas.true.real.attribute"/>
+          <parameter key="68" value="baiknya.true.real.attribute"/>
+          <parameter key="69" value="bamus.true.real.attribute"/>
+          <parameter key="70" value="bang.true.real.attribute"/>
+          <parameter key="71" value="banget.true.real.attribute"/>
+          <parameter key="72" value="bangun.true.real.attribute"/>
+          <parameter key="73" value="bantah.true.real.attribute"/>
+          <parameter key="74" value="bantu.true.real.attribute"/>
+          <parameter key="75" value="batal.true.real.attribute"/>
+          <parameter key="76" value="batas.true.real.attribute"/>
+          <parameter key="77" value="bayaran.true.real.attribute"/>
+          <parameter key="78" value="beda.true.real.attribute"/>
+          <parameter key="79" value="beed.true.real.attribute"/>
+          <parameter key="80" value="begog.true.real.attribute"/>
+          <parameter key="81" value="beliau.true.real.attribute"/>
+          <parameter key="82" value="belom.true.real.attribute"/>
+          <parameter key="83" value="benang.true.real.attribute"/>
+          <parameter key="84" value="bener.true.real.attribute"/>
+          <parameter key="85" value="benerin.true.real.attribute"/>
+          <parameter key="86" value="berani.true.real.attribute"/>
+          <parameter key="87" value="berantem.true.real.attribute"/>
+          <parameter key="88" value="berat.true.real.attribute"/>
+          <parameter key="89" value="berbahaya.true.real.attribute"/>
+          <parameter key="90" value="berbuah.true.real.attribute"/>
+          <parameter key="91" value="berdampak.true.real.attribute"/>
+          <parameter key="92" value="berdasarkan.true.real.attribute"/>
+          <parameter key="93" value="beredar.true.real.attribute"/>
+          <parameter key="94" value="beresin.true.real.attribute"/>
+          <parameter key="95" value="berharap.true.real.attribute"/>
+          <parameter key="96" value="berhasil.true.real.attribute"/>
+          <parameter key="97" value="berita.true.real.attribute"/>
+          <parameter key="98" value="berjalan.true.real.attribute"/>
+          <parameter key="99" value="berkali.true.real.attribute"/>
+          <parameter key="100" value="berkembang.true.real.attribute"/>
+          <parameter key="101" value="berlanjut.true.real.attribute"/>
+          <parameter key="102" value="berlawanan.true.real.attribute"/>
+          <parameter key="103" value="bermasalah.true.real.attribute"/>
+          <parameter key="104" value="bernapas.true.real.attribute"/>
+          <parameter key="105" value="berperan.true.real.attribute"/>
+          <parameter key="106" value="berpotensi.true.real.attribute"/>
+          <parameter key="107" value="berproses.true.real.attribute"/>
+          <parameter key="108" value="bersifat.true.real.attribute"/>
+          <parameter key="109" value="bersimpati.true.real.attribute"/>
+          <parameter key="110" value="berskala.true.real.attribute"/>
+          <parameter key="111" value="bertanggung.true.real.attribute"/>
+          <parameter key="112" value="bertugas.true.real.attribute"/>
+          <parameter key="113" value="bestie.true.real.attribute"/>
+          <parameter key="114" value="bgt.true.real.attribute"/>
+          <parameter key="115" value="biar.true.real.attribute"/>
+          <parameter key="116" value="bidang.true.real.attribute"/>
+          <parameter key="117" value="bikin.true.real.attribute"/>
+          <parameter key="118" value="bilamana.true.real.attribute"/>
+          <parameter key="119" value="bilang.true.real.attribute"/>
+          <parameter key="120" value="bio.true.real.attribute"/>
+          <parameter key="121" value="bisanya.true.real.attribute"/>
+          <parameter key="122" value="bjoka.true.real.attribute"/>
+          <parameter key="123" value="bjorka.true.real.attribute"/>
+          <parameter key="124" value="bjorkanya.true.real.attribute"/>
+          <parameter key="125" value="bloon.true.real.attribute"/>
+          <parameter key="126" value="bocor.true.real.attribute"/>
+          <parameter key="127" value="bocoran.true.real.attribute"/>
+          <parameter key="128" value="bodo.true.real.attribute"/>
+          <parameter key="129" value="bos.true.real.attribute"/>
+          <parameter key="130" value="bssn.true.real.attribute"/>
+          <parameter key="131" value="buatan.true.real.attribute"/>
+          <parameter key="132" value="budget.true.real.attribute"/>
+          <parameter key="133" value="bukti.true.real.attribute"/>
+          <parameter key="134" value="bumn.true.real.attribute"/>
+          <parameter key="135" value="buntut.true.real.attribute"/>
+          <parameter key="136" value="butuhkan.true.real.attribute"/>
+          <parameter key="137" value="cair.true.real.attribute"/>
+          <parameter key="138" value="canggih.true.real.attribute"/>
+          <parameter key="139" value="cape.true.real.attribute"/>
+          <parameter key="140" value="case.true.real.attribute"/>
+          <parameter key="141" value="cegah.true.real.attribute"/>
+          <parameter key="142" value="cek.true.real.attribute"/>
+          <parameter key="143" value="cepat.true.real.attribute"/>
+          <parameter key="144" value="cepet.true.real.attribute"/>
+          <parameter key="145" value="citizen.true.real.attribute"/>
+          <parameter key="146" value="cms.true.real.attribute"/>
+          <parameter key="147" value="coba.true.real.attribute"/>
+          <parameter key="148" value="cocok.true.real.attribute"/>
+          <parameter key="149" value="coding.true.real.attribute"/>
+          <parameter key="150" value="corona.true.real.attribute"/>
+          <parameter key="151" value="cost.true.real.attribute"/>
+          <parameter key="152" value="crime.true.real.attribute"/>
+          <parameter key="153" value="cyber.true.real.attribute"/>
+          <parameter key="154" value="daerah.true.real.attribute"/>
+          <parameter key="155" value="daftar.true.real.attribute"/>
+          <parameter key="156" value="dah.true.real.attribute"/>
+          <parameter key="157" value="dahlah.true.real.attribute"/>
+          <parameter key="158" value="dampak.true.real.attribute"/>
+          <parameter key="159" value="dana.true.real.attribute"/>
+          <parameter key="160" value="darkweb.true.real.attribute"/>
+          <parameter key="161" value="dasar.true.real.attribute"/>
+          <parameter key="162" value="dat.true.real.attribute"/>
+          <parameter key="163" value="data.true.real.attribute"/>
+          <parameter key="164" value="datanya.true.real.attribute"/>
+          <parameter key="165" value="dave.true.real.attribute"/>
+          <parameter key="166" value="deh.true.real.attribute"/>
+          <parameter key="167" value="denda.true.real.attribute"/>
+          <parameter key="168" value="denny.true.real.attribute"/>
+          <parameter key="169" value="deputi.true.real.attribute"/>
+          <parameter key="170" value="desa.true.real.attribute"/>
+          <parameter key="171" value="desak.true.real.attribute"/>
+          <parameter key="172" value="dewan.true.real.attribute"/>
+          <parameter key="173" value="dgn.true.real.attribute"/>
+          <parameter key="174" value="diajukan.true.real.attribute"/>
+          <parameter key="175" value="diapresiasi.true.real.attribute"/>
+          <parameter key="176" value="diatur.true.real.attribute"/>
+          <parameter key="177" value="dibahas.true.real.attribute"/>
+          <parameter key="178" value="dibahasketika.true.real.attribute"/>
+          <parameter key="179" value="dibawa.true.real.attribute"/>
+          <parameter key="180" value="dibayar.true.real.attribute"/>
+          <parameter key="181" value="dibenarkan.true.real.attribute"/>
+          <parameter key="182" value="diberlakukan.true.real.attribute"/>
+          <parameter key="183" value="dibocorkan.true.real.attribute"/>
+          <parameter key="184" value="dibuka.true.real.attribute"/>
+          <parameter key="185" value="dibutuhkan.true.real.attribute"/>
+          <parameter key="186" value="didapatkan.true.real.attribute"/>
+          <parameter key="187" value="didiemin.true.real.attribute"/>
+          <parameter key="188" value="didorong.true.real.attribute"/>
+          <parameter key="189" value="diganjar.true.real.attribute"/>
+          <parameter key="190" value="diganti.true.real.attribute"/>
+          <parameter key="191" value="diginiin.true.real.attribute"/>
+          <parameter key="192" value="digital.true.real.attribute"/>
+          <parameter key="193" value="digitalisasi.true.real.attribute"/>
+          <parameter key="194" value="dihack.true.real.attribute"/>
+          <parameter key="195" value="diharapkan.true.real.attribute"/>
+          <parameter key="196" value="dihasilkan.true.real.attribute"/>
+          <parameter key="197" value="diimbangi.true.real.attribute"/>
+          <parameter key="198" value="dijadikan.true.real.attribute"/>
+          <parameter key="199" value="dijualin.true.real.attribute"/>
+          <parameter key="200" value="dikadalin.true.real.attribute"/>
+          <parameter key="201" value="dikebut.true.real.attribute"/>
+          <parameter key="202" value="dikecualikan.true.real.attribute"/>
+          <parameter key="203" value="dikenakan.true.real.attribute"/>
+          <parameter key="204" value="diketok.true.real.attribute"/>
+          <parameter key="205" value="dikontrol.true.real.attribute"/>
+          <parameter key="206" value="dilaksanakan.true.real.attribute"/>
+          <parameter key="207" value="dilanjutkan.true.real.attribute"/>
+          <parameter key="208" value="dilarang.true.real.attribute"/>
+          <parameter key="209" value="dilindungi.true.real.attribute"/>
+          <parameter key="210" value="dilucuti.true.real.attribute"/>
+          <parameter key="211" value="dim.true.real.attribute"/>
+          <parameter key="212" value="dimana.true.real.attribute"/>
+          <parameter key="213" value="dimiliki.true.real.attribute"/>
+          <parameter key="214" value="dinilai.true.real.attribute"/>
+          <parameter key="215" value="dipakai.true.real.attribute"/>
+          <parameter key="216" value="dipilih.true.real.attribute"/>
+          <parameter key="217" value="diragukan.true.real.attribute"/>
+          <parameter key="218" value="direktur.true.real.attribute"/>
+          <parameter key="219" value="diremehin.true.real.attribute"/>
+          <parameter key="220" value="direncanakan.true.real.attribute"/>
+          <parameter key="221" value="diretas.true.real.attribute"/>
+          <parameter key="222" value="dirugikan.true.real.attribute"/>
+          <parameter key="223" value="disaat.true.real.attribute"/>
+          <parameter key="224" value="disah.true.real.attribute"/>
+          <parameter key="225" value="disahin.true.real.attribute"/>
+          <parameter key="226" value="disahkan.true.real.attribute"/>
+          <parameter key="227" value="disahkannya.true.real.attribute"/>
+          <parameter key="228" value="disalah.true.real.attribute"/>
+          <parameter key="229" value="disalahkan.true.real.attribute"/>
+          <parameter key="230" value="disegerakan.true.real.attribute"/>
+          <parameter key="231" value="diselenggarakan.true.real.attribute"/>
+          <parameter key="232" value="diselesaikan.true.real.attribute"/>
+          <parameter key="233" value="disengaja.true.real.attribute"/>
+          <parameter key="234" value="disepakati.true.real.attribute"/>
+          <parameter key="235" value="disepakatinya.true.real.attribute"/>
+          <parameter key="236" value="disetujui.true.real.attribute"/>
+          <parameter key="237" value="disetujuinya.true.real.attribute"/>
+          <parameter key="238" value="disiapkan.true.real.attribute"/>
+          <parameter key="239" value="disimpan.true.real.attribute"/>
+          <parameter key="240" value="disingkirkan.true.real.attribute"/>
+          <parameter key="241" value="diskusi.true.real.attribute"/>
+          <parameter key="242" value="ditargetkan.true.real.attribute"/>
+          <parameter key="243" value="ditemui.true.real.attribute"/>
+          <parameter key="244" value="ditentang.true.real.attribute"/>
+          <parameter key="245" value="ditetapkan.true.real.attribute"/>
+          <parameter key="246" value="dituangkan.true.real.attribute"/>
+          <parameter key="247" value="ditunda.true.real.attribute"/>
+          <parameter key="248" value="ditunjukan.true.real.attribute"/>
+          <parameter key="249" value="diundangkan.true.real.attribute"/>
+          <parameter key="250" value="diusulkan.true.real.attribute"/>
+          <parameter key="251" value="divisi.true.real.attribute"/>
+          <parameter key="252" value="dlm.true.real.attribute"/>
+          <parameter key="253" value="doang.true.real.attribute"/>
+          <parameter key="254" value="done.true.real.attribute"/>
+          <parameter key="255" value="dorong.true.real.attribute"/>
+          <parameter key="256" value="doxing.true.real.attribute"/>
+          <parameter key="257" value="dpr.true.real.attribute"/>
+          <parameter key="258" value="dprri.true.real.attribute"/>
+          <parameter key="259" value="draf.true.real.attribute"/>
+          <parameter key="260" value="draft.true.real.attribute"/>
+          <parameter key="261" value="drama.true.real.attribute"/>
+          <parameter key="262" value="dugaan.true.real.attribute"/>
+          <parameter key="263" value="dukung.true.real.attribute"/>
+          <parameter key="264" value="dukungan.true.real.attribute"/>
+          <parameter key="265" value="dunia.true.real.attribute"/>
+          <parameter key="266" value="easier.true.real.attribute"/>
+          <parameter key="267" value="efektif.true.real.attribute"/>
+          <parameter key="268" value="effendi.true.real.attribute"/>
+          <parameter key="269" value="eko.true.real.attribute"/>
+          <parameter key="270" value="ekonomi.true.real.attribute"/>
+          <parameter key="271" value="ekosistem.true.real.attribute"/>
+          <parameter key="272" value="eksekutif.true.real.attribute"/>
+          <parameter key="273" value="eljembut.true.real.attribute"/>
+          <parameter key="274" value="elsam.true.real.attribute"/>
+          <parameter key="275" value="emang.true.real.attribute"/>
+          <parameter key="276" value="embargo.true.real.attribute"/>
+          <parameter key="277" value="enaknya.true.real.attribute"/>
+          <parameter key="278" value="ente.true.real.attribute"/>
+          <parameter key="279" value="eropa.true.real.attribute"/>
+          <parameter key="280" value="esnya.true.real.attribute"/>
+          <parameter key="281" value="euforia.true.real.attribute"/>
+          <parameter key="282" value="euy.true.real.attribute"/>
+          <parameter key="283" value="evan.true.real.attribute"/>
+          <parameter key="284" value="ferguso.true.real.attribute"/>
+          <parameter key="285" value="fgd.true.real.attribute"/>
+          <parameter key="286" value="fikarno.true.real.attribute"/>
+          <parameter key="287" value="final.true.real.attribute"/>
+          <parameter key="288" value="finalnya.true.real.attribute"/>
+          <parameter key="289" value="firewall.true.real.attribute"/>
+          <parameter key="290" value="fokus.true.real.attribute"/>
+          <parameter key="291" value="forum.true.real.attribute"/>
+          <parameter key="292" value="fraksi.true.real.attribute"/>
+          <parameter key="293" value="gada.true.real.attribute"/>
+          <parameter key="294" value="gak.true.real.attribute"/>
+          <parameter key="295" value="gangguan.true.real.attribute"/>
+          <parameter key="296" value="ganti.true.real.attribute"/>
+          <parameter key="297" value="gara.true.real.attribute"/>
+          <parameter key="298" value="gas.true.real.attribute"/>
+          <parameter key="299" value="gaspol.true.real.attribute"/>
+          <parameter key="300" value="gaya.true.real.attribute"/>
+          <parameter key="301" value="gdpr.true.real.attribute"/>
+          <parameter key="302" value="gelar.true.real.attribute"/>
+          <parameter key="303" value="gelarnya.true.real.attribute"/>
+          <parameter key="304" value="gerindra.true.real.attribute"/>
+          <parameter key="305" value="gimana.true.real.attribute"/>
+          <parameter key="306" value="gimmick.true.real.attribute"/>
+          <parameter key="307" value="gini.true.real.attribute"/>
+          <parameter key="308" value="gitu.true.real.attribute"/>
+          <parameter key="309" value="global.true.real.attribute"/>
+          <parameter key="310" value="goblok.true.real.attribute"/>
+          <parameter key="311" value="goblokin.true.real.attribute"/>
+          <parameter key="312" value="gol.true.real.attribute"/>
+          <parameter key="313" value="golden.true.real.attribute"/>
+          <parameter key="314" value="golongkan.true.real.attribute"/>
+          <parameter key="315" value="governance.true.real.attribute"/>
+          <parameter key="316" value="gplate.true.real.attribute"/>
+          <parameter key="317" value="gue.true.real.attribute"/>
+          <parameter key="318" value="gugatan.true.real.attribute"/>
+          <parameter key="319" value="hack.true.real.attribute"/>
+          <parameter key="320" value="hacker.true.real.attribute"/>
+          <parameter key="321" value="hackernya.true.real.attribute"/>
+          <parameter key="322" value="hafid.true.real.attribute"/>
+          <parameter key="323" value="hak.true.real.attribute"/>
+          <parameter key="324" value="halah.true.real.attribute"/>
+          <parameter key="325" value="halnya.true.real.attribute"/>
+          <parameter key="326" value="harap.true.real.attribute"/>
+          <parameter key="327" value="hasil.true.real.attribute"/>
+          <parameter key="328" value="headline.true.real.attribute"/>
+          <parameter key="329" value="heboh.true.real.attribute"/>
+          <parameter key="330" value="heker.true.real.attribute"/>
+          <parameter key="331" value="hela.true.real.attribute"/>
+          <parameter key="332" value="heran.true.real.attribute"/>
+          <parameter key="333" value="hero.true.real.attribute"/>
+          <parameter key="334" value="hey.true.real.attribute"/>
+          <parameter key="335" value="hilang.true.real.attribute"/>
+          <parameter key="336" value="him.true.real.attribute"/>
+          <parameter key="337" value="hmm.true.real.attribute"/>
+          <parameter key="338" value="hoax.true.real.attribute"/>
+          <parameter key="339" value="huk.true.real.attribute"/>
+          <parameter key="340" value="hukum.true.real.attribute"/>
+          <parameter key="341" value="iblis.true.real.attribute"/>
+          <parameter key="342" value="identitas.true.real.attribute"/>
+          <parameter key="343" value="ilegal.true.real.attribute"/>
+          <parameter key="344" value="imaz.true.real.attribute"/>
+          <parameter key="345" value="imbas.true.real.attribute"/>
+          <parameter key="346" value="independen.true.real.attribute"/>
+          <parameter key="347" value="independensi.true.real.attribute"/>
+          <parameter key="348" value="indihome.true.real.attribute"/>
+          <parameter key="349" value="indikasi.true.real.attribute"/>
+          <parameter key="350" value="indonesi.true.real.attribute"/>
+          <parameter key="351" value="indonesia.true.real.attribute"/>
+          <parameter key="352" value="industri.true.real.attribute"/>
+          <parameter key="353" value="infografik.true.real.attribute"/>
+          <parameter key="354" value="informatika.true.real.attribute"/>
+          <parameter key="355" value="infratruktur.true.real.attribute"/>
+          <parameter key="356" value="inisiatif.true.real.attribute"/>
+          <parameter key="357" value="insiden.true.real.attribute"/>
+          <parameter key="358" value="instansi.true.real.attribute"/>
+          <parameter key="359" value="insya.true.real.attribute"/>
+          <parameter key="360" value="integritas.true.real.attribute"/>
+          <parameter key="361" value="internet.true.real.attribute"/>
+          <parameter key="362" value="intinya.true.real.attribute"/>
+          <parameter key="363" value="inventar.true.real.attribute"/>
+          <parameter key="364" value="inventarisasi.true.real.attribute"/>
+          <parameter key="365" value="iqbal.true.real.attribute"/>
+          <parameter key="366" value="isi.true.real.attribute"/>
+          <parameter key="367" value="isinya.true.real.attribute"/>
+          <parameter key="368" value="ismail.true.real.attribute"/>
+          <parameter key="369" value="isu.true.real.attribute"/>
+          <parameter key="370" value="ite.true.real.attribute"/>
+          <parameter key="371" value="jadiin.true.real.attribute"/>
+          <parameter key="372" value="jadikan.true.real.attribute"/>
+          <parameter key="373" value="jadwal.true.real.attribute"/>
+          <parameter key="374" value="jagonya.true.real.attribute"/>
+          <parameter key="375" value="jalan.true.real.attribute"/>
+          <parameter key="376" value="janji.true.real.attribute"/>
+          <parameter key="377" value="jaringan.true.real.attribute"/>
+          <parameter key="378" value="jebol.true.real.attribute"/>
+          <parameter key="379" value="jejak.true.real.attribute"/>
+          <parameter key="380" value="jerat.true.real.attribute"/>
+          <parameter key="381" value="johnny.true.real.attribute"/>
+          <parameter key="382" value="jokowi.true.real.attribute"/>
+          <parameter key="383" value="kaa.true.real.attribute"/>
+          <parameter key="384" value="kabarnya.true.real.attribute"/>
+          <parameter key="385" value="kabinet.true.real.attribute"/>
+          <parameter key="386" value="kadin.true.real.attribute"/>
+          <parameter key="387" value="kagaklah.true.real.attribute"/>
+          <parameter key="388" value="kah.true.real.attribute"/>
+          <parameter key="389" value="kaji.true.real.attribute"/>
+          <parameter key="390" value="kali.true.real.attribute"/>
+          <parameter key="391" value="kalo.true.real.attribute"/>
+          <parameter key="392" value="kang.true.real.attribute"/>
+          <parameter key="393" value="kapdp.true.real.attribute"/>
+          <parameter key="394" value="kasih.true.real.attribute"/>
+          <parameter key="395" value="kategori.true.real.attribute"/>
+          <parameter key="396" value="kayak.true.real.attribute"/>
+          <parameter key="397" value="keadilan.true.real.attribute"/>
+          <parameter key="398" value="keamanan.true.real.attribute"/>
+          <parameter key="399" value="kebaikan.true.real.attribute"/>
+          <parameter key="400" value="kebenaran.true.real.attribute"/>
+          <parameter key="401" value="keberadaan.true.real.attribute"/>
+          <parameter key="402" value="kebocoran.true.real.attribute"/>
+          <parameter key="403" value="kedepannya.true.real.attribute"/>
+          <parameter key="404" value="kejadian.true.real.attribute"/>
+          <parameter key="405" value="kejahatan.true.real.attribute"/>
+          <parameter key="406" value="kejelasan.true.real.attribute"/>
+          <parameter key="407" value="keknya.true.real.attribute"/>
+          <parameter key="408" value="kekuasaan.true.real.attribute"/>
+          <parameter key="409" value="kekurangan.true.real.attribute"/>
+          <parameter key="410" value="kelar.true.real.attribute"/>
+          <parameter key="411" value="kelemahan.true.real.attribute"/>
+          <parameter key="412" value="kelembagaan.true.real.attribute"/>
+          <parameter key="413" value="kelewat.true.real.attribute"/>
+          <parameter key="414" value="keliatan.true.real.attribute"/>
+          <parameter key="415" value="kelola.true.real.attribute"/>
+          <parameter key="416" value="kemanusiaan.true.real.attribute"/>
+          <parameter key="417" value="kemarin.true.real.attribute"/>
+          <parameter key="418" value="kementerian.true.real.attribute"/>
+          <parameter key="419" value="kementeriannya.true.real.attribute"/>
+          <parameter key="420" value="kemko.true.real.attribute"/>
+          <parameter key="421" value="kemkominfo.true.real.attribute"/>
+          <parameter key="422" value="kemunculan.true.real.attribute"/>
+          <parameter key="423" value="kena.true.real.attribute"/>
+          <parameter key="424" value="kepala.true.real.attribute"/>
+          <parameter key="425" value="kepentingan.true.real.attribute"/>
+          <parameter key="426" value="kepercayaan.true.real.attribute"/>
+          <parameter key="427" value="keputusan.true.real.attribute"/>
+          <parameter key="428" value="kerap.true.real.attribute"/>
+          <parameter key="429" value="keras.true.real.attribute"/>
+          <parameter key="430" value="keren.true.real.attribute"/>
+          <parameter key="431" value="kerja.true.real.attribute"/>
+          <parameter key="432" value="kerjanya.true.real.attribute"/>
+          <parameter key="433" value="kesadaran.true.real.attribute"/>
+          <parameter key="434" value="kesal.true.real.attribute"/>
+          <parameter key="435" value="kesepakatan.true.real.attribute"/>
+          <parameter key="436" value="kesiapa.true.real.attribute"/>
+          <parameter key="437" value="kesiapan.true.real.attribute"/>
+          <parameter key="438" value="ketebak.true.real.attribute"/>
+          <parameter key="439" value="ketemunya.true.real.attribute"/>
+          <parameter key="440" value="ketok.true.real.attribute"/>
+          <parameter key="441" value="ketua.true.real.attribute"/>
+          <parameter key="442" value="keuntungan.true.real.attribute"/>
+          <parameter key="443" value="kew.true.real.attribute"/>
+          <parameter key="444" value="kewajiban.true.real.attribute"/>
+          <parameter key="445" value="khawatir.true.real.attribute"/>
+          <parameter key="446" value="khawatirkan.true.real.attribute"/>
+          <parameter key="447" value="khayalan.true.real.attribute"/>
+          <parameter key="448" value="khusus.true.real.attribute"/>
+          <parameter key="449" value="kinerja.true.real.attribute"/>
+          <parameter key="450" value="kks.true.real.attribute"/>
+          <parameter key="451" value="klaim.true.real.attribute"/>
+          <parameter key="452" value="klasifikasi.true.real.attribute"/>
+          <parameter key="453" value="klik.true.real.attribute"/>
+          <parameter key="454" value="koalisi.true.real.attribute"/>
+          <parameter key="455" value="kolaborasi.true.real.attribute"/>
+          <parameter key="456" value="kombinasikan.true.real.attribute"/>
+          <parameter key="457" value="kominfo.true.real.attribute"/>
+          <parameter key="458" value="komis.true.real.attribute"/>
+          <parameter key="459" value="komisi.true.real.attribute"/>
+          <parameter key="460" value="komoditas.true.real.attribute"/>
+          <parameter key="461" value="komprehensif.true.real.attribute"/>
+          <parameter key="462" value="komunikasi.true.real.attribute"/>
+          <parameter key="463" value="kondisi.true.real.attribute"/>
+          <parameter key="464" value="konflik.true.real.attribute"/>
+          <parameter key="465" value="kontra.true.real.attribute"/>
+          <parameter key="466" value="konyol.true.real.attribute"/>
+          <parameter key="467" value="koordinator.true.real.attribute"/>
+          <parameter key="468" value="kopas.true.real.attribute"/>
+          <parameter key="469" value="korban.true.real.attribute"/>
+          <parameter key="470" value="korporasi.true.real.attribute"/>
+          <parameter key="471" value="kreatif.true.real.attribute"/>
+          <parameter key="472" value="kritis.true.real.attribute"/>
+          <parameter key="473" value="krusial.true.real.attribute"/>
+          <parameter key="474" value="kuat.true.real.attribute"/>
+          <parameter key="475" value="kumparan.true.real.attribute"/>
+          <parameter key="476" value="kuntadhi.true.real.attribute"/>
+          <parameter key="477" value="kwkwwk.true.real.attribute"/>
+          <parameter key="478" value="kwp.true.real.attribute"/>
+          <parameter key="479" value="kwwk.true.real.attribute"/>
+          <parameter key="480" value="kyk.true.real.attribute"/>
+          <parameter key="481" value="labih.true.real.attribute"/>
+          <parameter key="482" value="lahir.true.real.attribute"/>
+          <parameter key="483" value="lakuin.true.real.attribute"/>
+          <parameter key="484" value="lancar.true.real.attribute"/>
+          <parameter key="485" value="landasan.true.real.attribute"/>
+          <parameter key="486" value="langkah.true.real.attribute"/>
+          <parameter key="487" value="langsung.true.real.attribute"/>
+          <parameter key="488" value="lanjutan.true.real.attribute"/>
+          <parameter key="489" value="lantaran.true.real.attribute"/>
+          <parameter key="490" value="larangan.true.real.attribute"/>
+          <parameter key="491" value="last.true.real.attribute"/>
+          <parameter key="492" value="leak.true.real.attribute"/>
+          <parameter key="493" value="lega.true.real.attribute"/>
+          <parameter key="494" value="legislasi.true.real.attribute"/>
+          <parameter key="495" value="legnas.true.real.attribute"/>
+          <parameter key="496" value="lemah.true.real.attribute"/>
+          <parameter key="497" value="lembaga.true.real.attribute"/>
+          <parameter key="498" value="lempar.true.real.attribute"/>
+          <parameter key="499" value="lemparan.true.real.attribute"/>
+          <parameter key="500" value="lengkap.true.real.attribute"/>
+          <parameter key="501" value="level.true.real.attribute"/>
+          <parameter key="502" value="lhaaa.true.real.attribute"/>
+          <parameter key="503" value="lho.true.real.attribute"/>
+          <parameter key="504" value="liat.true.real.attribute"/>
+          <parameter key="505" value="lindungi.true.real.attribute"/>
+          <parameter key="506" value="linimasa.true.real.attribute"/>
+          <parameter key="507" value="lohh.true.real.attribute"/>
+          <parameter key="508" value="lolos.true.real.attribute"/>
+          <parameter key="509" value="loren.true.real.attribute"/>
+          <parameter key="510" value="luput.true.real.attribute"/>
+          <parameter key="511" value="mabuk.true.real.attribute"/>
+          <parameter key="512" value="mah.true.real.attribute"/>
+          <parameter key="513" value="maharani.true.real.attribute"/>
+          <parameter key="514" value="mahfud.true.real.attribute"/>
+          <parameter key="515" value="makasih.true.real.attribute"/>
+          <parameter key="516" value="maksain.true.real.attribute"/>
+          <parameter key="517" value="maksud.true.real.attribute"/>
+          <parameter key="518" value="maling.true.real.attribute"/>
+          <parameter key="519" value="mandek.true.real.attribute"/>
+          <parameter key="520" value="manfaat.true.real.attribute"/>
+          <parameter key="521" value="manggut.true.real.attribute"/>
+          <parameter key="522" value="manis.true.real.attribute"/>
+          <parameter key="523" value="mantap.true.real.attribute"/>
+          <parameter key="524" value="marak.true.real.attribute"/>
+          <parameter key="525" value="maraknya.true.real.attribute"/>
+          <parameter key="526" value="maryam.true.real.attribute"/>
+          <parameter key="527" value="masif.true.real.attribute"/>
+          <parameter key="528" value="masuk.true.real.attribute"/>
+          <parameter key="529" value="masukan.true.real.attribute"/>
+          <parameter key="530" value="masyarakat.true.real.attribute"/>
+          <parameter key="531" value="media.true.real.attribute"/>
+          <parameter key="532" value="mekanisme.true.real.attribute"/>
+          <parameter key="533" value="melanggar.true.real.attribute"/>
+          <parameter key="534" value="melawan.true.real.attribute"/>
+          <parameter key="535" value="melibatkan.true.real.attribute"/>
+          <parameter key="536" value="melindungi.true.real.attribute"/>
+          <parameter key="537" value="meliputi.true.real.attribute"/>
+          <parameter key="538" value="memalukan.true.real.attribute"/>
+          <parameter key="539" value="memasuki.true.real.attribute"/>
+          <parameter key="540" value="membahas.true.real.attribute"/>
+          <parameter key="541" value="membangun.true.real.attribute"/>
+          <parameter key="542" value="membawa.true.real.attribute"/>
+          <parameter key="543" value="membe.true.real.attribute"/>
+          <parameter key="544" value="membiarkan.true.real.attribute"/>
+          <parameter key="545" value="membocorkan.true.real.attribute"/>
+          <parameter key="546" value="membuahkan.true.real.attribute"/>
+          <parameter key="547" value="memiliki.true.real.attribute"/>
+          <parameter key="548" value="mempercepat.true.real.attribute"/>
+          <parameter key="549" value="memperkuatkan.true.real.attribute"/>
+          <parameter key="550" value="memuat.true.real.attribute"/>
+          <parameter key="551" value="memuluskan.true.real.attribute"/>
+          <parameter key="552" value="menangani.true.real.attribute"/>
+          <parameter key="553" value="menanggulangi.true.real.attribute"/>
+          <parameter key="554" value="menangnya.true.real.attribute"/>
+          <parameter key="555" value="mencakup.true.real.attribute"/>
+          <parameter key="556" value="mencurigakan.true.real.attribute"/>
+          <parameter key="557" value="mendesak.true.real.attribute"/>
+          <parameter key="558" value="mendorong.true.real.attribute"/>
+          <parameter key="559" value="mendukung.true.real.attribute"/>
+          <parameter key="560" value="menekan.true.real.attribute"/>
+          <parameter key="561" value="menekankan.true.real.attribute"/>
+          <parameter key="562" value="menemui.true.real.attribute"/>
+          <parameter key="563" value="menetapkan.true.real.attribute"/>
+          <parameter key="564" value="menga.true.real.attribute"/>
+          <parameter key="565" value="mengacu.true.real.attribute"/>
+          <parameter key="566" value="mengadu.true.real.attribute"/>
+          <parameter key="567" value="mengaku.true.real.attribute"/>
+          <parameter key="568" value="mengalihkan.true.real.attribute"/>
+          <parameter key="569" value="mengamankan.true.real.attribute"/>
+          <parameter key="570" value="mengapresiasi.true.real.attribute"/>
+          <parameter key="571" value="mengatasi.true.real.attribute"/>
+          <parameter key="572" value="mengatur.true.real.attribute"/>
+          <parameter key="573" value="mengesahkan.true.real.attribute"/>
+          <parameter key="574" value="mengetahuinya.true.real.attribute"/>
+          <parameter key="575" value="mengganjal.true.real.attribute"/>
+          <parameter key="576" value="menggolkan.true.real.attribute"/>
+          <parameter key="577" value="menggulirkan.true.real.attribute"/>
+          <parameter key="578" value="menghadapi.true.real.attribute"/>
+          <parameter key="579" value="menghalangi.true.real.attribute"/>
+          <parameter key="580" value="menghasilkan.true.real.attribute"/>
+          <parameter key="581" value="mengindahkan.true.real.attribute"/>
+          <parameter key="582" value="mengintegrasi.true.real.attribute"/>
+          <parameter key="583" value="mengobrak.true.real.attribute"/>
+          <parameter key="584" value="mengokohkan.true.real.attribute"/>
+          <parameter key="585" value="menilai.true.real.attribute"/>
+          <parameter key="586" value="meningkatkan.true.real.attribute"/>
+          <parameter key="587" value="menjaga.true.real.attribute"/>
+          <parameter key="588" value="menjamin.true.real.attribute"/>
+          <parameter key="589" value="menko.true.real.attribute"/>
+          <parameter key="590" value="menkominfo.true.real.attribute"/>
+          <parameter key="591" value="mensahkan.true.real.attribute"/>
+          <parameter key="592" value="mensyahkan.true.real.attribute"/>
+          <parameter key="593" value="menteri.true.real.attribute"/>
+          <parameter key="594" value="menumbuhkan.true.real.attribute"/>
+          <parameter key="595" value="menunggu.true.real.attribute"/>
+          <parameter key="596" value="menurutmu.true.real.attribute"/>
+          <parameter key="597" value="menyakini.true.real.attribute"/>
+          <parameter key="598" value="menyasar.true.real.attribute"/>
+          <parameter key="599" value="menyebar.true.real.attribute"/>
+          <parameter key="600" value="menyedot.true.real.attribute"/>
+          <parameter key="601" value="menyelesaikan.true.real.attribute"/>
+          <parameter key="602" value="menyepakati.true.real.attribute"/>
+          <parameter key="603" value="menyetujui.true.real.attribute"/>
+          <parameter key="604" value="menyimpan.true.real.attribute"/>
+          <parameter key="605" value="menyinggung.true.real.attribute"/>
+          <parameter key="606" value="menyisir.true.real.attribute"/>
+          <parameter key="607" value="menyongsong.true.real.attribute"/>
+          <parameter key="608" value="menyuarakan.true.real.attribute"/>
+          <parameter key="609" value="merah.true.real.attribute"/>
+          <parameter key="610" value="merahnya.true.real.attribute"/>
+          <parameter key="611" value="merangkum.true.real.attribute"/>
+          <parameter key="612" value="meredam.true.real.attribute"/>
+          <parameter key="613" value="merencanakan.true.real.attribute"/>
+          <parameter key="614" value="meresahkan.true.real.attribute"/>
+          <parameter key="615" value="merugikan.true.real.attribute"/>
+          <parameter key="616" value="mesti.true.real.attribute"/>
+          <parameter key="617" value="meutya.true.real.attribute"/>
+          <parameter key="618" value="miliar.true.real.attribute"/>
+          <parameter key="619" value="milyar.true.real.attribute"/>
+          <parameter key="620" value="minggu.true.real.attribute"/>
+          <parameter key="621" value="mintakan.true.real.attribute"/>
+          <parameter key="622" value="miracleincell.true.real.attribute"/>
+          <parameter key="623" value="mmg.true.real.attribute"/>
+          <parameter key="624" value="moment.true.real.attribute"/>
+          <parameter key="625" value="momentum.true.real.attribute"/>
+          <parameter key="626" value="motif.true.real.attribute"/>
+          <parameter key="627" value="much.true.real.attribute"/>
+          <parameter key="628" value="muda.true.real.attribute"/>
+          <parameter key="629" value="mudah.true.real.attribute"/>
+          <parameter key="630" value="mudahan.true.real.attribute"/>
+          <parameter key="631" value="muhammad.true.real.attribute"/>
+          <parameter key="632" value="mulainya.true.real.attribute"/>
+          <parameter key="633" value="mulu.true.real.attribute"/>
+          <parameter key="634" value="mulusin.true.real.attribute"/>
+          <parameter key="635" value="muncul.true.real.attribute"/>
+          <parameter key="636" value="musyawarah.true.real.attribute"/>
+          <parameter key="637" value="mutlak.true.real.attribute"/>
+          <parameter key="638" value="nafas.true.real.attribute"/>
+          <parameter key="639" value="nama.true.real.attribute"/>
+          <parameter key="640" value="naming.true.real.attribute"/>
+          <parameter key="641" value="nangkep.true.real.attribute"/>
+          <parameter key="642" value="nasional.true.real.attribute"/>
+          <parameter key="643" value="naskah.true.real.attribute"/>
+          <parameter key="644" value="ndak.true.real.attribute"/>
+          <parameter key="645" value="negara.true.real.attribute"/>
+          <parameter key="646" value="negatif.true.real.attribute"/>
+          <parameter key="647" value="negeri.true.real.attribute"/>
+          <parameter key="648" value="nemu.true.real.attribute"/>
+          <parameter key="649" value="ngagep.true.real.attribute"/>
+          <parameter key="650" value="ngaku.true.real.attribute"/>
+          <parameter key="651" value="ngambang.true.real.attribute"/>
+          <parameter key="652" value="ngapain.true.real.attribute"/>
+          <parameter key="653" value="ngawur.true.real.attribute"/>
+          <parameter key="654" value="ngedemo.true.real.attribute"/>
+          <parameter key="655" value="ngedesak.true.real.attribute"/>
+          <parameter key="656" value="ngejar.true.real.attribute"/>
+          <parameter key="657" value="ngeprank.true.real.attribute"/>
+          <parameter key="658" value="ngeri.true.real.attribute"/>
+          <parameter key="659" value="ngesahin.true.real.attribute"/>
+          <parameter key="660" value="nggak.true.real.attribute"/>
+          <parameter key="661" value="ngoceh.true.real.attribute"/>
+          <parameter key="662" value="ngomong.true.real.attribute"/>
+          <parameter key="663" value="ngtwit.true.real.attribute"/>
+          <parameter key="664" value="nih.true.real.attribute"/>
+          <parameter key="665" value="nik.true.real.attribute"/>
+          <parameter key="666" value="ning.true.real.attribute"/>
+          <parameter key="667" value="noh.true.real.attribute"/>
+          <parameter key="668" value="nomor.true.real.attribute"/>
+          <parameter key="669" value="nomornya.true.real.attribute"/>
+          <parameter key="670" value="nongol.true.real.attribute"/>
+          <parameter key="671" value="ntar.true.real.attribute"/>
+          <parameter key="672" value="nulis.true.real.attribute"/>
+          <parameter key="673" value="nunggu.true.real.attribute"/>
+          <parameter key="674" value="nya.true.real.attribute"/>
+          <parameter key="675" value="nyeett.true.real.attribute"/>
+          <parameter key="676" value="offline.true.real.attribute"/>
+          <parameter key="677" value="opensource.true.real.attribute"/>
+          <parameter key="678" value="opini.true.real.attribute"/>
+          <parameter key="679" value="optimis.true.real.attribute"/>
+          <parameter key="680" value="orang.true.real.attribute"/>
+          <parameter key="681" value="org.true.real.attribute"/>
+          <parameter key="682" value="oscar.true.real.attribute"/>
+          <parameter key="683" value="otoritas.true.real.attribute"/>
+          <parameter key="684" value="outputnya.true.real.attribute"/>
+          <parameter key="685" value="padhal.true.real.attribute"/>
+          <parameter key="686" value="pahlawan.true.real.attribute"/>
+          <parameter key="687" value="pake.true.real.attribute"/>
+          <parameter key="688" value="palu.true.real.attribute"/>
+          <parameter key="689" value="pandanga.true.real.attribute"/>
+          <parameter key="690" value="pandangan.true.real.attribute"/>
+          <parameter key="691" value="panduan.true.real.attribute"/>
+          <parameter key="692" value="panja.true.real.attribute"/>
+          <parameter key="693" value="pantes.true.real.attribute"/>
+          <parameter key="694" value="paripurna.true.real.attribute"/>
+          <parameter key="695" value="parlemen.true.real.attribute"/>
+          <parameter key="696" value="partisipasi.true.real.attribute"/>
+          <parameter key="697" value="pas.true.real.attribute"/>
+          <parameter key="698" value="pasal.true.real.attribute"/>
+          <parameter key="699" value="pasalpasal.true.real.attribute"/>
+          <parameter key="700" value="pasrah.true.real.attribute"/>
+          <parameter key="701" value="pastikan.true.real.attribute"/>
+          <parameter key="702" value="pastinya.true.real.attribute"/>
+          <parameter key="703" value="patuhi.true.real.attribute"/>
+          <parameter key="704" value="payung.true.real.attribute"/>
+          <parameter key="705" value="pdd.true.real.attribute"/>
+          <parameter key="706" value="pdp.true.real.attribute"/>
+          <parameter key="707" value="peduli.true.real.attribute"/>
+          <parameter key="708" value="pejabat.true.real.attribute"/>
+          <parameter key="709" value="pejabatnya.true.real.attribute"/>
+          <parameter key="710" value="pekan.true.real.attribute"/>
+          <parameter key="711" value="pelaku.true.real.attribute"/>
+          <parameter key="712" value="pelanggar.true.real.attribute"/>
+          <parameter key="713" value="pelanggaran.true.real.attribute"/>
+          <parameter key="714" value="pelanggarnya.true.real.attribute"/>
+          <parameter key="715" value="pelecehan.true.real.attribute"/>
+          <parameter key="716" value="pelindung.true.real.attribute"/>
+          <parameter key="717" value="pelindungan.true.real.attribute"/>
+          <parameter key="718" value="peluang.true.real.attribute"/>
+          <parameter key="719" value="pembahasan.true.real.attribute"/>
+          <parameter key="720" value="pembentukan.true.real.attribute"/>
+          <parameter key="721" value="pemberian.true.real.attribute"/>
+          <parameter key="722" value="pemberlakuan.true.real.attribute"/>
+          <parameter key="723" value="pembobolan.true.real.attribute"/>
+          <parameter key="724" value="pembocoran.true.real.attribute"/>
+          <parameter key="725" value="pembuatan.true.real.attribute"/>
+          <parameter key="726" value="pemerintah.true.real.attribute"/>
+          <parameter key="727" value="pemerintahan.true.real.attribute"/>
+          <parameter key="728" value="pemilik.true.real.attribute"/>
+          <parameter key="729" value="penanggung.true.real.attribute"/>
+          <parameter key="730" value="penasaran.true.real.attribute"/>
+          <parameter key="731" value="pendapat.true.real.attribute"/>
+          <parameter key="732" value="penduduk.true.real.attribute"/>
+          <parameter key="733" value="penegasan.true.real.attribute"/>
+          <parameter key="734" value="penerapan.true.real.attribute"/>
+          <parameter key="735" value="pengakuan.true.real.attribute"/>
+          <parameter key="736" value="pengalihan.true.real.attribute"/>
+          <parameter key="737" value="pengambilan.true.real.attribute"/>
+          <parameter key="738" value="pengaturan.true.real.attribute"/>
+          <parameter key="739" value="pengawas.true.real.attribute"/>
+          <parameter key="740" value="pengelolaan.true.real.attribute"/>
+          <parameter key="741" value="pengesahan.true.real.attribute"/>
+          <parameter key="742" value="pengguna.true.real.attribute"/>
+          <parameter key="743" value="penghormatan.true.real.attribute"/>
+          <parameter key="744" value="pengingat.true.real.attribute"/>
+          <parameter key="745" value="peningkatan.true.real.attribute"/>
+          <parameter key="746" value="penjelasan.true.real.attribute"/>
+          <parameter key="747" value="penyelenggara.true.real.attribute"/>
+          <parameter key="748" value="penyelesaian.true.real.attribute"/>
+          <parameter key="749" value="penyusunan.true.real.attribute"/>
+          <parameter key="750" value="perampasan.true.real.attribute"/>
+          <parameter key="751" value="peraturan.true.real.attribute"/>
+          <parameter key="752" value="perbaiki.true.real.attribute"/>
+          <parameter key="753" value="perbuatan.true.real.attribute"/>
+          <parameter key="754" value="percaya.true.real.attribute"/>
+          <parameter key="755" value="percepatan.true.real.attribute"/>
+          <parameter key="756" value="peretasan.true.real.attribute"/>
+          <parameter key="757" value="perhatian.true.real.attribute"/>
+          <parameter key="758" value="peristiwa.true.real.attribute"/>
+          <parameter key="759" value="perjalanan.true.real.attribute"/>
+          <parameter key="760" value="perjuangan.true.real.attribute"/>
+          <parameter key="761" value="perjuangkan.true.real.attribute"/>
+          <parameter key="762" value="perli.true.real.attribute"/>
+          <parameter key="763" value="perlidungan.true.real.attribute"/>
+          <parameter key="764" value="perlindungan.true.real.attribute"/>
+          <parameter key="765" value="perlindungannya.true.real.attribute"/>
+          <parameter key="766" value="permainanya.true.real.attribute"/>
+          <parameter key="767" value="permen.true.real.attribute"/>
+          <parameter key="768" value="pernyataannya.true.real.attribute"/>
+          <parameter key="769" value="persetujuan.true.real.attribute"/>
+          <parameter key="770" value="persiapan.true.real.attribute"/>
+          <parameter key="771" value="perspektif.true.real.attribute"/>
+          <parameter key="772" value="perubahan.true.real.attribute"/>
+          <parameter key="773" value="perumus.true.real.attribute"/>
+          <parameter key="774" value="perwakilan.true.real.attribute"/>
+          <parameter key="775" value="petisi.true.real.attribute"/>
+          <parameter key="776" value="petisinya.true.real.attribute"/>
+          <parameter key="777" value="petugas.true.real.attribute"/>
+          <parameter key="778" value="piala.true.real.attribute"/>
+          <parameter key="779" value="pidana.true.real.attribute"/>
+          <parameter key="780" value="pintar.true.real.attribute"/>
+          <parameter key="781" value="plate.true.real.attribute"/>
+          <parameter key="782" value="platejohnny.true.real.attribute"/>
+          <parameter key="783" value="poin.true.real.attribute"/>
+          <parameter key="784" value="point.true.real.attribute"/>
+          <parameter key="785" value="pokok.true.real.attribute"/>
+          <parameter key="786" value="pol.true.real.attribute"/>
+          <parameter key="787" value="polandia.true.real.attribute"/>
+          <parameter key="788" value="polhukam.true.real.attribute"/>
+          <parameter key="789" value="polisi.true.real.attribute"/>
+          <parameter key="790" value="politik.true.real.attribute"/>
+          <parameter key="791" value="positif.true.real.attribute"/>
+          <parameter key="792" value="praktik.true.real.attribute"/>
+          <parameter key="793" value="presiden.true.real.attribute"/>
+          <parameter key="794" value="pribadi.true.real.attribute"/>
+          <parameter key="795" value="pribadinya.true.real.attribute"/>
+          <parameter key="796" value="pribadinyaberkaitan.true.real.attribute"/>
+          <parameter key="797" value="prioritas.true.real.attribute"/>
+          <parameter key="798" value="prioritaskan.true.real.attribute"/>
+          <parameter key="799" value="problem.true.real.attribute"/>
+          <parameter key="800" value="program.true.real.attribute"/>
+          <parameter key="801" value="prolegnas.true.real.attribute"/>
+          <parameter key="802" value="proses.true.real.attribute"/>
+          <parameter key="803" value="proxy.true.real.attribute"/>
+          <parameter key="804" value="proyek.true.real.attribute"/>
+          <parameter key="805" value="pse.true.real.attribute"/>
+          <parameter key="806" value="puan.true.real.attribute"/>
+          <parameter key="807" value="publik.true.real.attribute"/>
+          <parameter key="808" value="publikasi.true.real.attribute"/>
+          <parameter key="809" value="pusat.true.real.attribute"/>
+          <parameter key="810" value="rabu.true.real.attribute"/>
+          <parameter key="811" value="rachel.true.real.attribute"/>
+          <parameter key="812" value="rahasia.true.real.attribute"/>
+          <parameter key="813" value="rakyat.true.real.attribute"/>
+          <parameter key="814" value="rame.true.real.attribute"/>
+          <parameter key="815" value="rampung.true.real.attribute"/>
+          <parameter key="816" value="rampungkan.true.real.attribute"/>
+          <parameter key="817" value="rancangan.true.real.attribute"/>
+          <parameter key="818" value="rangka.true.real.attribute"/>
+          <parameter key="819" value="rapat.true.real.attribute"/>
+          <parameter key="820" value="rebutan.true.real.attribute"/>
+          <parameter key="821" value="redaksi.true.real.attribute"/>
+          <parameter key="822" value="regulator.true.real.attribute"/>
+          <parameter key="823" value="remeh.true.real.attribute"/>
+          <parameter key="824" value="rencana.true.real.attribute"/>
+          <parameter key="825" value="rencananya.true.real.attribute"/>
+          <parameter key="826" value="rendah.true.real.attribute"/>
+          <parameter key="827" value="rentan.true.real.attribute"/>
+          <parameter key="828" value="revolusi.true.real.attribute"/>
+          <parameter key="829" value="rezim.true.real.attribute"/>
+          <parameter key="830" value="ribaru.true.real.attribute"/>
+          <parameter key="831" value="ribu.true.real.attribute"/>
+          <parameter key="832" value="riset.true.real.attribute"/>
+          <parameter key="833" value="rizki.true.real.attribute"/>
+          <parameter key="834" value="ruang.true.real.attribute"/>
+          <parameter key="835" value="rugi.true.real.attribute"/>
+          <parameter key="836" value="rujukan.true.real.attribute"/>
+          <parameter key="837" value="rumah.true.real.attribute"/>
+          <parameter key="838" value="ruu.true.real.attribute"/>
+          <parameter key="839" value="sadar.true.real.attribute"/>
+          <parameter key="840" value="sadari.true.real.attribute"/>
+          <parameter key="841" value="sah.true.real.attribute"/>
+          <parameter key="842" value="sahin.true.real.attribute"/>
+          <parameter key="843" value="sahkan.true.real.attribute"/>
+          <parameter key="844" value="said.true.real.attribute"/>
+          <parameter key="845" value="salah.true.real.attribute"/>
+          <parameter key="846" value="sampe.true.real.attribute"/>
+          <parameter key="847" value="sanksi.true.real.attribute"/>
+          <parameter key="848" value="santai.true.real.attribute"/>
+          <parameter key="849" value="saringan.true.real.attribute"/>
+          <parameter key="850" value="satunya.true.real.attribute"/>
+          <parameter key="851" value="sayang.true.real.attribute"/>
+          <parameter key="852" value="seandainya.true.real.attribute"/>
+          <parameter key="853" value="sebentar.true.real.attribute"/>
+          <parameter key="854" value="secepatnya.true.real.attribute"/>
+          <parameter key="855" value="secure.true.real.attribute"/>
+          <parameter key="856" value="security.true.real.attribute"/>
+          <parameter key="857" value="sedih.true.real.attribute"/>
+          <parameter key="858" value="segelintir.true.real.attribute"/>
+          <parameter key="859" value="segenap.true.real.attribute"/>
+          <parameter key="860" value="segerah.true.real.attribute"/>
+          <parameter key="861" value="segerakan.true.real.attribute"/>
+          <parameter key="862" value="seiring.true.real.attribute"/>
+          <parameter key="863" value="sejarah.true.real.attribute"/>
+          <parameter key="864" value="sekalik.true.real.attribute"/>
+          <parameter key="865" value="sekian.true.real.attribute"/>
+          <parameter key="866" value="sekilas.true.real.attribute"/>
+          <parameter key="867" value="seksual.true.real.attribute"/>
+          <parameter key="868" value="selesai.true.real.attribute"/>
+          <parameter key="869" value="semangat.true.real.attribute"/>
+          <parameter key="870" value="semoga.true.real.attribute"/>
+          <parameter key="871" value="senang.true.real.attribute"/>
+          <parameter key="872" value="sengaja.true.real.attribute"/>
+          <parameter key="873" value="senin.true.real.attribute"/>
+          <parameter key="874" value="sensitif.true.real.attribute"/>
+          <parameter key="875" value="sentimen.true.real.attribute"/>
+          <parameter key="876" value="sepaka.true.real.attribute"/>
+          <parameter key="877" value="sepakat.true.real.attribute"/>
+          <parameter key="878" value="serangan.true.real.attribute"/>
+          <parameter key="879" value="serba.true.real.attribute"/>
+          <parameter key="880" value="serius.true.real.attribute"/>
+          <parameter key="881" value="sesuai.true.real.attribute"/>
+          <parameter key="882" value="setuju.true.real.attribute"/>
+          <parameter key="883" value="setujui.true.real.attribute"/>
+          <parameter key="884" value="setujuu.true.real.attribute"/>
+          <parameter key="885" value="sewenang.true.real.attribute"/>
+          <parameter key="886" value="sexual.true.real.attribute"/>
+          <parameter key="887" value="sialan.true.real.attribute"/>
+          <parameter key="888" value="siapkah.true.real.attribute"/>
+          <parameter key="889" value="siber.true.real.attribute"/>
+          <parameter key="890" value="sidang.true.real.attribute"/>
+          <parameter key="891" value="sih.true.real.attribute"/>
+          <parameter key="892" value="simak.true.real.attribute"/>
+          <parameter key="893" value="simbolon.true.real.attribute"/>
+          <parameter key="894" value="simcard.true.real.attribute"/>
+          <parameter key="895" value="sinkronisasi.true.real.attribute"/>
+          <parameter key="896" value="siregar.true.real.attribute"/>
+          <parameter key="897" value="sistem.true.real.attribute"/>
+          <parameter key="898" value="situs.true.real.attribute"/>
+          <parameter key="899" value="skenario.true.real.attribute"/>
+          <parameter key="900" value="skripsiku.true.real.attribute"/>
+          <parameter key="901" value="smakin.true.real.attribute"/>
+          <parameter key="902" value="social.true.real.attribute"/>
+          <parameter key="903" value="sok.true.real.attribute"/>
+          <parameter key="904" value="solusi.true.real.attribute"/>
+          <parameter key="905" value="solusinya.true.real.attribute"/>
+          <parameter key="906" value="sorry.true.real.attribute"/>
+          <parameter key="907" value="space.true.real.attribute"/>
+          <parameter key="908" value="spesifik.true.real.attribute"/>
+          <parameter key="909" value="srikandi.true.real.attribute"/>
+          <parameter key="910" value="staf.true.real.attribute"/>
+          <parameter key="911" value="standar.true.real.attribute"/>
+          <parameter key="912" value="stop.true.real.attribute"/>
+          <parameter key="913" value="subjek.true.real.attribute"/>
+          <parameter key="914" value="substansi.true.real.attribute"/>
+          <parameter key="915" value="suka.true.real.attribute"/>
+          <parameter key="916" value="sumber.true.real.attribute"/>
+          <parameter key="917" value="suruh.true.real.attribute"/>
+          <parameter key="918" value="surveillance.true.real.attribute"/>
+          <parameter key="919" value="susah.true.real.attribute"/>
+          <parameter key="920" value="swasta.true.real.attribute"/>
+          <parameter key="921" value="syarat.true.real.attribute"/>
+          <parameter key="922" value="tahap.true.real.attribute"/>
+          <parameter key="923" value="tahapan.true.real.attribute"/>
+          <parameter key="924" value="tambahan.true.real.attribute"/>
+          <parameter key="925" value="tanah.true.real.attribute"/>
+          <parameter key="926" value="tanda.true.real.attribute"/>
+          <parameter key="927" value="tangani.true.real.attribute"/>
+          <parameter key="928" value="tangkap.true.real.attribute"/>
+          <parameter key="929" value="tantangan.true.real.attribute"/>
+          <parameter key="930" value="tata.true.real.attribute"/>
+          <parameter key="931" value="tau.true.real.attribute"/>
+          <parameter key="932" value="taukah.true.real.attribute"/>
+          <parameter key="933" value="taunya.true.real.attribute"/>
+          <parameter key="934" value="teknis.true.real.attribute"/>
+          <parameter key="935" value="teknologi.true.real.attribute"/>
+          <parameter key="936" value="tema.true.real.attribute"/>
+          <parameter key="937" value="tenang.true.real.attribute"/>
+          <parameter key="938" value="terancam.true.real.attribute"/>
+          <parameter key="939" value="terang.true.real.attribute"/>
+          <parameter key="940" value="terbaru.true.real.attribute"/>
+          <parameter key="941" value="terbarunya.true.real.attribute"/>
+          <parameter key="942" value="tercapai.true.real.attribute"/>
+          <parameter key="943" value="terhindar.true.real.attribute"/>
+          <parameter key="944" value="teriakin.true.real.attribute"/>
+          <parameter key="945" value="teridentifikasi.true.real.attribute"/>
+          <parameter key="946" value="terima.true.real.attribute"/>
+          <parameter key="947" value="terimakasih.true.real.attribute"/>
+          <parameter key="948" value="terjaga.true.real.attribute"/>
+          <parameter key="949" value="terkait.true.real.attribute"/>
+          <parameter key="950" value="terkandung.true.real.attribute"/>
+          <parameter key="951" value="terlarang.true.real.attribute"/>
+          <parameter key="952" value="terlibat.true.real.attribute"/>
+          <parameter key="953" value="termuat.true.real.attribute"/>
+          <parameter key="954" value="terpenting.true.real.attribute"/>
+          <parameter key="955" value="tersangka.true.real.attribute"/>
+          <parameter key="956" value="tertarik.true.real.attribute"/>
+          <parameter key="957" value="tetapkan.true.real.attribute"/>
+          <parameter key="958" value="tetep.true.real.attribute"/>
+          <parameter key="959" value="tgl.true.real.attribute"/>
+          <parameter key="960" value="than.true.real.attribute"/>
+          <parameter key="961" value="that.true.real.attribute"/>
+          <parameter key="962" value="thn.true.real.attribute"/>
+          <parameter key="963" value="tii.true.real.attribute"/>
+          <parameter key="964" value="tim.true.real.attribute"/>
+          <parameter key="965" value="tindak.true.real.attribute"/>
+          <parameter key="966" value="tindakan.true.real.attribute"/>
+          <parameter key="967" value="tinggal.true.real.attribute"/>
+          <parameter key="968" value="tingkat.true.real.attribute"/>
+          <parameter key="969" value="tiongkok.true.real.attribute"/>
+          <parameter key="970" value="titik.true.real.attribute"/>
+          <parameter key="971" value="togog.true.real.attribute"/>
+          <parameter key="972" value="tok.true.real.attribute"/>
+          <parameter key="973" value="tolong.true.real.attribute"/>
+          <parameter key="974" value="tombak.true.real.attribute"/>
+          <parameter key="975" value="topik.true.real.attribute"/>
+          <parameter key="976" value="torehan.true.real.attribute"/>
+          <parameter key="977" value="transisinya.true.real.attribute"/>
+          <parameter key="978" value="transparan.true.real.attribute"/>
+          <parameter key="979" value="tren.true.real.attribute"/>
+          <parameter key="980" value="trending.true.real.attribute"/>
+          <parameter key="981" value="triliun.true.real.attribute"/>
+          <parameter key="982" value="trus.true.real.attribute"/>
+          <parameter key="983" value="tsb.true.real.attribute"/>
+          <parameter key="984" value="tugas.true.real.attribute"/>
+          <parameter key="985" value="tuh.true.real.attribute"/>
+          <parameter key="986" value="tujuh.true.real.attribute"/>
+          <parameter key="987" value="tukang.true.real.attribute"/>
+          <parameter key="988" value="tulisan.true.real.attribute"/>
+          <parameter key="989" value="tumbal.true.real.attribute"/>
+          <parameter key="990" value="tunggu.true.real.attribute"/>
+          <parameter key="991" value="turunan.true.real.attribute"/>
+          <parameter key="992" value="tweeps.true.real.attribute"/>
+          <parameter key="993" value="twitter.true.real.attribute"/>
+          <parameter key="994" value="uda.true.real.attribute"/>
+          <parameter key="995" value="udah.true.real.attribute"/>
+          <parameter key="996" value="ujung.true.real.attribute"/>
+          <parameter key="997" value="ulah.true.real.attribute"/>
+          <parameter key="998" value="undang.true.real.attribute"/>
+          <parameter key="999" value="undangun.true.real.attribute"/>
+          <parameter key="1000" value="upaya.true.real.attribute"/>
+          <parameter key="1001" value="update.true.real.attribute"/>
+          <parameter key="1002" value="urgensi.true.real.attribute"/>
+          <parameter key="1003" value="urgensinya.true.real.attribute"/>
+          <parameter key="1004" value="urus.true.real.attribute"/>
+          <parameter key="1005" value="urusan.true.real.attribute"/>
+          <parameter key="1006" value="utk.true.real.attribute"/>
+          <parameter key="1007" value="uunya.true.real.attribute"/>
+          <parameter key="1008" value="virus.true.real.attribute"/>
+          <parameter key="1009" value="wakanda.true.real.attribute"/>
+          <parameter key="1010" value="war.true.real.attribute"/>
+          <parameter key="1011" value="warga.true.real.attribute"/>
+          <parameter key="1012" value="waspada.true.real.attribute"/>
+          <parameter key="1013" value="wenang.true.real.attribute"/>
+          <parameter key="1014" value="wkkwk.true.real.attribute"/>
+          <parameter key="1015" value="wkwk.true.real.attribute"/>
+          <parameter key="1016" value="wkwkkw.true.real.attribute"/>
+          <parameter key="1017" value="wkwkwkwk.true.real.attribute"/>
+          <parameter key="1018" value="wow.true.real.attribute"/>
+          <parameter key="1019" value="yaa.true.real.attribute"/>
+          <parameter key="1020" value="yak.true.real.attribute"/>
+          <parameter key="1021" value="yeee.true.real.attribute"/>
+          <parameter key="1022" value="yok.true.real.attribute"/>
+          <parameter key="1023" value="yonathan.true.real.attribute"/>
+          <parameter key="1024" value="yuk.true.real.attribute"/>
+          <parameter key="1025" value="zaman.true.real.attribute"/>
+        </list>
+        <parameter key="read_not_matching_values_as_missings" value="false"/>
+      </operator>
+      <operator activated="true" class="set_role" compatibility="9.10.011" expanded="true" height="82" name="Set Role" width="90" x="179" y="187">
+        <parameter key="attribute_name" value="Sentimen"/>
+        <parameter key="target_role" value="label"/>
+        <list key="set_additional_roles"/>
+      </operator>
+      <operator activated="true" class="operator_toolbox:smote" compatibility="2.14.000" expanded="true" height="82" name="SMOTE Upsampling" width="90" x="313" y="187">
+        <parameter key="number_of_neighbours" value="5"/>
+        <parameter key="normalize" value="true"/>
+        <parameter key="equalize_classes" value="true"/>
+        <parameter key="upsampling_size" value="1000"/>
+        <parameter key="auto_detect_minority_class" value="true"/>
+        <parameter key="minority_class" value="negatif, positif"/>
+        <parameter key="round_integers" value="true"/>
+        <parameter key="nominal_change_rate" value="0.5"/>
+        <parameter key="use_local_random_seed" value="false"/>
+        <parameter key="local_random_seed" value="1992"/>
+      </operator>
+      <operator activated="true" class="operator_toolbox:smote" compatibility="2.14.000" expanded="true" height="82" name="SMOTE Upsampling (2)" width="90" x="447" y="187">
+        <parameter key="number_of_neighbours" value="5"/>
+        <parameter key="normalize" value="true"/>
+        <parameter key="equalize_classes" value="true"/>
+        <parameter key="upsampling_size" value="1000"/>
+        <parameter key="auto_detect_minority_class" value="true"/>
+        <parameter key="minority_class" value="negatif, positif"/>
+        <parameter key="round_integers" value="true"/>
+        <parameter key="nominal_change_rate" value="0.5"/>
+        <parameter key="use_local_random_seed" value="false"/>
+        <parameter key="local_random_seed" value="1992"/>
+      </operator>
+      <operator activated="true" class="multiply" compatibility="9.10.011" expanded="true" height="124" name="Multiply" width="90" x="581" y="187"/>
+      <operator activated="true" class="concurrency:cross_validation" compatibility="9.10.011" expanded="true" height="145" name="Cross Validation - Random Forest" width="90" x="782" y="340">
+        <parameter key="split_on_batch_attribute" value="false"/>
+        <parameter key="leave_one_out" value="false"/>
+        <parameter key="number_of_folds" value="10"/>
+        <parameter key="sampling_type" value="automatic"/>
+        <parameter key="use_local_random_seed" value="false"/>
+        <parameter key="local_random_seed" value="1992"/>
+        <parameter key="enable_parallel_execution" value="true"/>
+        <process expanded="true">
+          <operator activated="true" class="concurrency:parallel_random_forest" compatibility="9.10.011" expanded="true" height="103" name="Random Forest" width="90" x="112" y="34">
+            <parameter key="number_of_trees" value="100"/>
+            <parameter key="criterion" value="gain_ratio"/>
+            <parameter key="maximal_depth" value="10"/>
+            <parameter key="apply_pruning" value="false"/>
+            <parameter key="confidence" value="0.1"/>
+            <parameter key="apply_prepruning" value="false"/>
+            <parameter key="minimal_gain" value="0.01"/>
+            <parameter key="minimal_leaf_size" value="2"/>
+            <parameter key="minimal_size_for_split" value="4"/>
+            <parameter key="number_of_prepruning_alternatives" value="3"/>
+            <parameter key="random_splits" value="false"/>
+            <parameter key="guess_subset_ratio" value="true"/>
+            <parameter key="subset_ratio" value="0.2"/>
+            <parameter key="voting_strategy" value="confidence vote"/>
+            <parameter key="use_local_random_seed" value="false"/>
+            <parameter key="local_random_seed" value="1992"/>
+            <parameter key="enable_parallel_execution" value="true"/>
+          </operator>
+          <connect from_port="training set" to_op="Random Forest" to_port="training set"/>
+          <connect from_op="Random Forest" from_port="model" to_port="model"/>
+          <connect from_op="Random Forest" from_port="exampleSet" to_port="through 1"/>
+          <connect from_op="Random Forest" from_port="weights" to_port="through 2"/>
+          <portSpacing port="source_training set" spacing="0"/>
+          <portSpacing port="sink_model" spacing="0"/>
+          <portSpacing port="sink_through 1" spacing="0"/>
+          <portSpacing port="sink_through 2" spacing="0"/>
+          <portSpacing port="sink_through 3" spacing="0"/>
+        </process>
+        <process expanded="true">
+          <operator activated="true" class="apply_model" compatibility="9.10.011" expanded="true" height="82" name="Apply Model (4)" width="90" x="45" y="34">
+            <list key="application_parameters"/>
+            <parameter key="create_view" value="false"/>
+          </operator>
+          <operator activated="true" class="performance_classification" compatibility="9.10.011" expanded="true" height="82" name="Performance (4)" width="90" x="167" y="34">
+            <parameter key="main_criterion" value="first"/>
+            <parameter key="accuracy" value="true"/>
+            <parameter key="classification_error" value="false"/>
+            <parameter key="kappa" value="false"/>
+            <parameter key="weighted_mean_recall" value="false"/>
+            <parameter key="weighted_mean_precision" value="false"/>
+            <parameter key="spearman_rho" value="false"/>
+            <parameter key="kendall_tau" value="false"/>
+            <parameter key="absolute_error" value="false"/>
+            <parameter key="relative_error" value="false"/>
+            <parameter key="relative_error_lenient" value="false"/>
+            <parameter key="relative_error_strict" value="false"/>
+            <parameter key="normalized_absolute_error" value="false"/>
+            <parameter key="root_mean_squared_error" value="false"/>
+            <parameter key="root_relative_squared_error" value="false"/>
+            <parameter key="squared_error" value="false"/>
+            <parameter key="correlation" value="false"/>
+            <parameter key="squared_correlation" value="false"/>
+            <parameter key="cross-entropy" value="false"/>
+            <parameter key="margin" value="false"/>
+            <parameter key="soft_margin_loss" value="false"/>
+            <parameter key="logistic_loss" value="false"/>
+            <parameter key="skip_undefined_labels" value="true"/>
+            <parameter key="use_example_weights" value="true"/>
+            <list key="class_weights"/>
+          </operator>
+          <connect from_port="model" to_op="Apply Model (4)" to_port="model"/>
+          <connect from_port="test set" to_op="Apply Model (4)" to_port="unlabelled data"/>
+          <connect from_op="Apply Model (4)" from_port="labelled data" to_op="Performance (4)" to_port="labelled data"/>
+          <connect from_op="Performance (4)" from_port="performance" to_port="performance 1"/>
+          <connect from_op="Performance (4)" from_port="example set" to_port="test set results"/>
+          <portSpacing port="source_model" spacing="0"/>
+          <portSpacing port="source_test set" spacing="0"/>
+          <portSpacing port="source_through 1" spacing="0"/>
+          <portSpacing port="source_through 2" spacing="0"/>
+          <portSpacing port="source_through 3" spacing="0"/>
+          <portSpacing port="sink_test set results" spacing="0"/>
+          <portSpacing port="sink_performance 1" spacing="0"/>
+          <portSpacing port="sink_performance 2" spacing="0"/>
+        </process>
+      </operator>
+      <operator activated="true" class="concurrency:cross_validation" compatibility="9.10.011" expanded="true" height="145" name="Cross Validation - Naive B" width="90" x="782" y="187">
+        <parameter key="split_on_batch_attribute" value="false"/>
+        <parameter key="leave_one_out" value="false"/>
+        <parameter key="number_of_folds" value="10"/>
+        <parameter key="sampling_type" value="automatic"/>
+        <parameter key="use_local_random_seed" value="false"/>
+        <parameter key="local_random_seed" value="1992"/>
+        <parameter key="enable_parallel_execution" value="true"/>
+        <process expanded="true">
+          <operator activated="false" class="naive_bayes" compatibility="9.10.011" expanded="true" height="82" name="Naive Bayes" width="90" x="112" y="340">
+            <parameter key="laplace_correction" value="true"/>
+          </operator>
+          <operator activated="true" class="naive_bayes_kernel" compatibility="9.10.011" expanded="true" height="82" name="Naive Bayes (Kernel)" width="90" x="112" y="34">
+            <parameter key="laplace_correction" value="true"/>
+            <parameter key="estimation_mode" value="greedy"/>
+            <parameter key="bandwidth_selection" value="heuristic"/>
+            <parameter key="bandwidth" value="0.1"/>
+            <parameter key="minimum_bandwidth" value="0.1"/>
+            <parameter key="number_of_kernels" value="10"/>
+            <parameter key="use_application_grid" value="false"/>
+            <parameter key="application_grid_size" value="200"/>
+          </operator>
+          <connect from_port="training set" to_op="Naive Bayes (Kernel)" to_port="training set"/>
+          <connect from_op="Naive Bayes (Kernel)" from_port="model" to_port="model"/>
+          <connect from_op="Naive Bayes (Kernel)" from_port="exampleSet" to_port="through 1"/>
+          <portSpacing port="source_training set" spacing="0"/>
+          <portSpacing port="sink_model" spacing="0"/>
+          <portSpacing port="sink_through 1" spacing="0"/>
+          <portSpacing port="sink_through 2" spacing="0"/>
+        </process>
+        <process expanded="true">
+          <operator activated="true" class="apply_model" compatibility="9.10.011" expanded="true" height="82" name="Apply Model (2)" width="90" x="45" y="34">
+            <list key="application_parameters"/>
+            <parameter key="create_view" value="false"/>
+          </operator>
+          <operator activated="true" class="performance_classification" compatibility="9.10.011" expanded="true" height="82" name="Performance (2)" width="90" x="167" y="34">
+            <parameter key="main_criterion" value="first"/>
+            <parameter key="accuracy" value="true"/>
+            <parameter key="classification_error" value="false"/>
+            <parameter key="kappa" value="false"/>
+            <parameter key="weighted_mean_recall" value="false"/>
+            <parameter key="weighted_mean_precision" value="false"/>
+            <parameter key="spearman_rho" value="false"/>
+            <parameter key="kendall_tau" value="false"/>
+            <parameter key="absolute_error" value="false"/>
+            <parameter key="relative_error" value="false"/>
+            <parameter key="relative_error_lenient" value="false"/>
+            <parameter key="relative_error_strict" value="false"/>
+            <parameter key="normalized_absolute_error" value="false"/>
+            <parameter key="root_mean_squared_error" value="false"/>
+            <parameter key="root_relative_squared_error" value="false"/>
+            <parameter key="squared_error" value="false"/>
+            <parameter key="correlation" value="false"/>
+            <parameter key="squared_correlation" value="false"/>
+            <parameter key="cross-entropy" value="false"/>
+            <parameter key="margin" value="false"/>
+            <parameter key="soft_margin_loss" value="false"/>
+            <parameter key="logistic_loss" value="false"/>
+            <parameter key="skip_undefined_labels" value="true"/>
+            <parameter key="use_example_weights" value="true"/>
+            <list key="class_weights"/>
+          </operator>
+          <connect from_port="model" to_op="Apply Model (2)" to_port="model"/>
+          <connect from_port="test set" to_op="Apply Model (2)" to_port="unlabelled data"/>
+          <connect from_op="Apply Model (2)" from_port="labelled data" to_op="Performance (2)" to_port="labelled data"/>
+          <connect from_op="Performance (2)" from_port="performance" to_port="performance 1"/>
+          <connect from_op="Performance (2)" from_port="example set" to_port="test set results"/>
+          <portSpacing port="source_model" spacing="0"/>
+          <portSpacing port="source_test set" spacing="0"/>
+          <portSpacing port="source_through 1" spacing="0"/>
+          <portSpacing port="source_through 2" spacing="0"/>
+          <portSpacing port="sink_test set results" spacing="0"/>
+          <portSpacing port="sink_performance 1" spacing="0"/>
+          <portSpacing port="sink_performance 2" spacing="0"/>
+        </process>
+      </operator>
+      <operator activated="true" class="concurrency:cross_validation" compatibility="9.10.011" expanded="true" height="145" name="Cross Validation - SVM" width="90" x="782" y="34">
+        <parameter key="split_on_batch_attribute" value="false"/>
+        <parameter key="leave_one_out" value="false"/>
+        <parameter key="number_of_folds" value="10"/>
+        <parameter key="sampling_type" value="automatic"/>
+        <parameter key="use_local_random_seed" value="false"/>
+        <parameter key="local_random_seed" value="1992"/>
+        <parameter key="enable_parallel_execution" value="true"/>
+        <process expanded="true">
+          <operator activated="true" class="classification_by_regression" compatibility="9.10.011" expanded="true" height="82" name="Classification by Regression" width="90" x="112" y="34">
+            <process expanded="true">
+              <operator activated="true" class="support_vector_machine" compatibility="9.10.011" expanded="true" height="124" name="SVM" width="90" x="179" y="34">
+                <parameter key="kernel_type" value="dot"/>
+                <parameter key="kernel_gamma" value="1.0"/>
+                <parameter key="kernel_sigma1" value="1.0"/>
+                <parameter key="kernel_sigma2" value="0.0"/>
+                <parameter key="kernel_sigma3" value="2.0"/>
+                <parameter key="kernel_shift" value="1.0"/>
+                <parameter key="kernel_degree" value="2.0"/>
+                <parameter key="kernel_a" value="1.0"/>
+                <parameter key="kernel_b" value="0.0"/>
+                <parameter key="kernel_cache" value="200"/>
+                <parameter key="C" value="0.0"/>
+                <parameter key="convergence_epsilon" value="0.001"/>
+                <parameter key="max_iterations" value="100000"/>
+                <parameter key="scale" value="true"/>
+                <parameter key="calculate_weights" value="true"/>
+                <parameter key="return_optimization_performance" value="true"/>
+                <parameter key="L_pos" value="1.0"/>
+                <parameter key="L_neg" value="1.0"/>
+                <parameter key="epsilon" value="0.0"/>
+                <parameter key="epsilon_plus" value="0.0"/>
+                <parameter key="epsilon_minus" value="0.0"/>
+                <parameter key="balance_cost" value="false"/>
+                <parameter key="quadratic_loss_pos" value="false"/>
+                <parameter key="quadratic_loss_neg" value="false"/>
+                <parameter key="estimate_performance" value="false"/>
+              </operator>
+              <connect from_port="training set" to_op="SVM" to_port="training set"/>
+              <connect from_op="SVM" from_port="model" to_port="model"/>
+              <portSpacing port="source_training set" spacing="0"/>
+              <portSpacing port="sink_model" spacing="0"/>
+            </process>
+          </operator>
+          <connect from_port="training set" to_op="Classification by Regression" to_port="training set"/>
+          <connect from_op="Classification by Regression" from_port="model" to_port="model"/>
+          <connect from_op="Classification by Regression" from_port="example set" to_port="through 1"/>
+          <portSpacing port="source_training set" spacing="0"/>
+          <portSpacing port="sink_model" spacing="0"/>
+          <portSpacing port="sink_through 1" spacing="0"/>
+          <portSpacing port="sink_through 2" spacing="0"/>
+        </process>
+        <process expanded="true">
+          <operator activated="true" class="apply_model" compatibility="9.10.011" expanded="true" height="82" name="Apply Model" width="90" x="45" y="34">
+            <list key="application_parameters"/>
+            <parameter key="create_view" value="false"/>
+          </operator>
+          <operator activated="true" class="performance_classification" compatibility="9.10.011" expanded="true" height="82" name="Performance" width="90" x="167" y="34">
+            <parameter key="main_criterion" value="first"/>
+            <parameter key="accuracy" value="true"/>
+            <parameter key="classification_error" value="false"/>
+            <parameter key="kappa" value="false"/>
+            <parameter key="weighted_mean_recall" value="false"/>
+            <parameter key="weighted_mean_precision" value="false"/>
+            <parameter key="spearman_rho" value="false"/>
+            <parameter key="kendall_tau" value="false"/>
+            <parameter key="absolute_error" value="false"/>
+            <parameter key="relative_error" value="false"/>
+            <parameter key="relative_error_lenient" value="false"/>
+            <parameter key="relative_error_strict" value="false"/>
+            <parameter key="normalized_absolute_error" value="false"/>
+            <parameter key="root_mean_squared_error" value="false"/>
+            <parameter key="root_relative_squared_error" value="false"/>
+            <parameter key="squared_error" value="false"/>
+            <parameter key="correlation" value="false"/>
+            <parameter key="squared_correlation" value="false"/>
+            <parameter key="cross-entropy" value="false"/>
+            <parameter key="margin" value="false"/>
+            <parameter key="soft_margin_loss" value="false"/>
+            <parameter key="logistic_loss" value="false"/>
+            <parameter key="skip_undefined_labels" value="true"/>
+            <parameter key="use_example_weights" value="true"/>
+            <list key="class_weights"/>
+          </operator>
+          <connect from_port="model" to_op="Apply Model" to_port="model"/>
+          <connect from_port="test set" to_op="Apply Model" to_port="unlabelled data"/>
+          <connect from_op="Apply Model" from_port="labelled data" to_op="Performance" to_port="labelled data"/>
+          <connect from_op="Performance" from_port="performance" to_port="performance 1"/>
+          <connect from_op="Performance" from_port="example set" to_port="test set results"/>
+          <portSpacing port="source_model" spacing="0"/>
+          <portSpacing port="source_test set" spacing="0"/>
+          <portSpacing port="source_through 1" spacing="0"/>
+          <portSpacing port="source_through 2" spacing="0"/>
+          <portSpacing port="sink_test set results" spacing="0"/>
+          <portSpacing port="sink_performance 1" spacing="0"/>
+          <portSpacing port="sink_performance 2" spacing="0"/>
+        </process>
+      </operator>
+      <connect from_op="Read CSV" from_port="output" to_op="Set Role" to_port="example set input"/>
+      <connect from_op="Set Role" from_port="example set output" to_op="SMOTE Upsampling" to_port="exa"/>
+      <connect from_op="SMOTE Upsampling" from_port="ups" to_op="SMOTE Upsampling (2)" to_port="exa"/>
+      <connect from_op="SMOTE Upsampling (2)" from_port="ups" to_op="Multiply" to_port="input"/>
+      <connect from_op="Multiply" from_port="output 1" to_op="Cross Validation - SVM" to_port="example set"/>
+      <connect from_op="Multiply" from_port="output 2" to_op="Cross Validation - Naive B" to_port="example set"/>
+      <connect from_op="Multiply" from_port="output 3" to_op="Cross Validation - Random Forest" to_port="example set"/>
+      <connect from_op="Cross Validation - Random Forest" from_port="performance 1" to_port="result 3"/>
+      <connect from_op="Cross Validation - Naive B" from_port="performance 1" to_port="result 2"/>
+      <connect from_op="Cross Validation - SVM" from_port="performance 1" to_port="result 1"/>
+      <portSpacing port="source_input 1" spacing="0"/>
+      <portSpacing port="sink_result 1" spacing="0"/>
+      <portSpacing port="sink_result 2" spacing="0"/>
+      <portSpacing port="sink_result 3" spacing="0"/>
+      <portSpacing port="sink_result 4" spacing="0"/>
+    </process>
+  </operator>
+</process>
